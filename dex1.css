@@ -1,0 +1,288 @@
+body {
+    background-image: url(gambar/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Berlin Sans FB', sans-serif;
+    box-sizing: border-box;
+    color: white; /* Seluruh teks utama di body akan berwarna putih */
+}
+
+.navbar {
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-family: Laurasia;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white; /* Warna teks link navigasi */
+    font-size: 23px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00; /* Efek hover tetap kuning */
+}
+
+.logout-container {
+    margin-left: auto;
+}
+
+.logout {
+    text-decoration: none;
+    color: #252525; /* Warna teks tombol logout menjadi gelap agar kontras dengan background kuning */
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    letter-spacing: 2px;
+}
+
+.logout:hover {
+    background-color: #ff6666; /* Efek hover tetap merah */
+    color: white; /* Warna teks hover pada tombol logout menjadi putih */
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Warna teks overlay gambar utama */
+    font-weight: bold;
+    text-shadow: 10px 10px 10px rgba(0.15, 0, 0, 0.15);
+    text-align: center;
+    font-family: baby bumi;
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .hero-text {
+        font-size: 24px;
+        font-family:Baby Bumi;
+    }
+}
+
+.batas {
+    background-color: #202020;
+    display: flex;
+    padding: 35px 50px;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.date-time-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white; /* Warna teks tanggal dan waktu */
+    font-family: Hobo Std;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    width: 95%;
+}
+
+.date-display {
+    text-align: left;
+    flex: 1;
+    letter-spacing: 1x;
+}
+
+.time-display {
+    text-align: right;
+    flex: 1;
+    letter-spacing: 2px;
+}
+
+.content {
+    margin: 0px;
+}
+
+.text-and-image {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.text-and-image img {
+    width: 48%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.text-and-image h2 {
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: white; /* Warna judul bagian teks dan gambar */
+    text-align: center;
+    font-family: Baby bumi;
+}
+
+.content p {
+    color: white; /* Warna paragraf bagian konten */
+    font-size: 15px;
+    font-family: poppins;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.image {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+
+.image img {
+    width: 48%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.image h2 {
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: white; /* Warna judul bagian gambar */
+    text-align: center;
+    font-family: Baby bumi;
+}
+
+.image p {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: poppins;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white; /* Warna paragraf bagian gambar */
+}
+
+.most-popular {
+    text-align: center;
+    margin: 50px 0;
+    font-family: baby bumi;
+}
+
+.most-popular h2 {
+    font-size: 36px;
+    color: white; /* Warna judul bagian paling populer */
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.popular-images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.popular-item {
+    width: 22%;
+    text-align: center;
+}
+
+.popular-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.popular-item img:hover {
+    transform: scale(1.1);
+}
+
+.popular-item p {
+    margin-top: 13px;
+    font-size: 18px;
+    color: white; /* Warna teks item populer */
+    font-weight: bold;
+    font-family: 'baby bumi', sans-serif;
+}
+.popular-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer {
+    background-color: #252525;
+    color: white; /* Warna teks footer */
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    width: 100%;
+    position: relative; 
+    bottom: 0;
+}
