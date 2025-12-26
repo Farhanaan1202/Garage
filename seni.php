@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Universitas Pamulang</title>
+    <title>AN Garage</title>
     <link rel="stylesheet" href="budd.css">
     <link rel="icon" href="gambar/logo-unpam-300x291.png">
 </head>
@@ -9,7 +9,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo-container">
-            <img src="gambar/logo-unpam-300x291.png" alt="Logo Universitas Pamulang" class="logo">
+            <img src="gambar/logo web.jpg" alt="Logo AN GARAGE" class="logo">
         </div>
         <ul>
             <li><a href="index1.php">Home</a></li>
@@ -58,7 +58,7 @@
     
     <!-- Footer -->
     <div class="footer">
-        <p>&copy; 2025 Armand Rhamadhan.</p>
+        <p>&copy; 2025 Farhan Febrianto.</p>
     </div>
 
     <script src="script.js"></script>
